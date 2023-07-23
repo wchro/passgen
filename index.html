@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PassGen - Generate secure passwords</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, max-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/b42c641c59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Pass<span>Gen</span></a>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left">
+        <h1 class="title">Generate secure passwords</h2>
+        <input
+          id="password"
+          class="password-input"
+          placeholder="Password"
+          readonly
+        />
+        <div class="password-score"></div>
+        <button class="generate-btn">Generate</button>
+        <label class="options"
+          ><input
+            class="chkbox"
+            type="checkbox"
+            id="lower_char"
+            checked
+          />Letters</label
+        >
+        <label class="options"
+          ><input
+            class="chkbox"
+            type="checkbox"
+            id="numbers"
+            checked
+          />Numbers</label
+        >
+        <label class="options"
+          ><input
+            class="chkbox"
+            type="checkbox"
+            id="uppercase"
+            checked
+          />Uppercases</label
+        >
+        <label class="options"
+          ><input class="chkbox" type="checkbox" id="symbols" />Symbols</label
+        >
+        <p class="password-len">8</p>
+        <input
+          type="range"
+          name=""
+          id="password-length"
+          class="pass-length"
+          min="5"
+          value="8"
+          max="25"
+        />
+      </div>
+      <div class="right">
+        <div class="article">
+            <h2 class="title">Enhance Your Security</h2>
+            <p>Safeguarding your sensitive information has never been easier. Whether you need a strong password for your email, social media, or any online account, our intuitive form is here to create unbreakable passwords tailored to your specifications.</p>
+            <h2 class="title">Stay Safe and Private</h2>
+            <p>Rest assured that your security is our top priority. We do not store any password. Your passwords remains confidential, giving you the peace of mind to generate passwords without worry.</p>
+            <h2 class="title">Generate. Copy. Secure.</h2>
+            <p>Generate your robust password with a single click and easily copy it to your clipboard. No more struggling to come up with strong passwords. Say goodbye to weak passwords and embrace the simplicity of staying secure.</p>
+        </div>
+        <div class="footer">
+            <a href="https://github.com/wchro/passgen" target="_blank"><i class="fa-brands fa-github"></i>
+                <p>Developed by wchro</p>
+            </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

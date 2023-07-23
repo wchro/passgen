@@ -1,0 +1,256 @@
+:root {
+  --main-color: #f8b500;
+  --main-color-hover: #f1b101;
+}
+
+html,
+body {
+  background-color: #f2f4fb;
+  font-family: "Ubuntu", "Arial";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: 500;
+  color: #313131;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.logo span {
+  color: var(--main-color);
+}
+
+nav {
+  padding-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  border-radius: 3px;
+  padding: 5px 15px;
+  transition: all 0.2s;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+nav li :hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: var(--main-color-hover);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 75%;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.right {
+  flex: 1;
+}
+
+.article {
+  padding: 20px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: rgb(65, 65, 65);
+}
+
+.footer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.fa-github {
+  color: black;
+}
+
+.title {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sub-title {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.password-input {
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 20px;
+  /* width: 250px; */
+  cursor: pointer;
+}
+
+.password-score {
+  margin-top: 2px;
+  width: 20%;
+  height: 6px;
+  background-color: darkred;
+  border-radius: 5px;
+}
+
+.generate-btn {
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.generate-btn:hover {
+  background-color: var(--main-color-hover);
+}
+
+.options {
+  display: flex;
+  margin-top: 15px;
+  font-size: 18px;
+  /* vertical-align: middle; */
+  align-items: center;
+}
+
+.chkbox {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(128, 128, 128, 0.33);
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chkbox:checked::after {
+  display: flex;
+  height: 100%;
+  background-color: var(--main-color);
+  justify-content: center;
+  align-items: center;
+  content: "\2714";
+  color: white;
+  border-radius: 5px;
+}
+
+.password-len {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 32px;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.pass-length {
+  appearance: none;
+  border-radius: 10px;
+  height: 8px;
+  background-color: #f9e09a;
+  cursor: pointer;
+}
+
+.pass-length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #f8f8f8;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pass-length::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #f8f8f8;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pass-length::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #f8f8f8;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 873px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    width: unset;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
