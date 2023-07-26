@@ -146,9 +146,8 @@ nav li :hover {
 
 .password-score {
   margin-top: 2px;
-  width: 20%;
   height: 6px;
-  background-color: darkred;
+  background-color: dadakred;
   border-radius: 5px;
 }
 
